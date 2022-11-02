@@ -76,6 +76,12 @@ export default Vue.extend({
   height: calc(100vh - 156px);
 }
 
+@media (min-width: 764px) {
+  .above-menu-container {
+    height: calc(100vh - 300px);
+  }
+}
+
 .hamburger-icon {
   width: 30px;
   height: 1px;
