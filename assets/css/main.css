@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MessinaSans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fonts/MessinaSansWeb-Regular.woff2') format('woff2'),
+    url('./fonts/MessinaSansWeb-Regular.woff') format('woff'),
+    url('./fonts/MessinaSansWeb-Regular.eot') format('eot');
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'MessinaSans';
+  color: #736357;
+  background-color: #f9f5ef;
+}
