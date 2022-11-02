@@ -12,15 +12,6 @@
     url('./fonts/MessinaSansWeb-Regular.eot') format('eot');
 }
 
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 body {
   font-family: 'MessinaSans';
   color: #736357;
