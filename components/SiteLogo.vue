@@ -45,10 +45,8 @@ export default {
 
       const value = maxWidth - (percent * 2);
 
-      console.log(percent);
-
       if (value <= 168) {
-        return "80px";
+        return "168px";
       }
 
       return (this.width = value + "px");
