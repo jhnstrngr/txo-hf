@@ -8,7 +8,7 @@
       x="0px"
       y="0px"
       :width="width"
-      height="auto"
+      height="100%"
       viewBox="0 0 684 303.5"
       style="overflow: visible; enable-background: new 0 0 684 303.5"
       xml:space="preserve"
@@ -56,8 +56,6 @@ export default {
       const percent = ((current / maxHeight) * 100);
 
       const value = maxWidth - (percent * 2);
-
-      console.log(percent);
 
       if (value <= 80) {
         return "80px";

@@ -2,7 +2,7 @@
   <a href="/" class="logo-mobile hidden xl:block">
     <svg
       :width="width"
-      height="auto"
+      height="100%"
       viewBox="0 0 600 266"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
