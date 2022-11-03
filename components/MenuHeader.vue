@@ -7,7 +7,11 @@
           <SiteLogo />
         </div>
         <div class="flex grow shrink-0 justify-end xl:hidden">
-          <button aria-expanded="false" :class="showMenu ? 'flex' : 'hidden'">
+          <button
+            aria-expanded="false"
+            class="transition-opacity duration-1000 flex"
+            :class="showMenu ? 'opacity' : 'opacity-0'"
+          >
             <span class="">
               <span class="hamburger-icon hamburger-icon__1"></span>
               <span class="hamburger-icon hamburger-icon__2"></span>
