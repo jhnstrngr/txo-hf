@@ -39,11 +39,11 @@ export default {
   methods: {
     onScroll () {
       const maxWidth = 600;
-      const maxHeight = window.innerHeight - 165;
+      const maxHeight = window.innerHeight - 266;
       const current = window.scrollY;
       const percent = ((current / maxHeight) * 100);
 
-      const value = maxWidth - (percent * 2);
+      const value = maxWidth - (percent * 3.5);
 
       if (value <= 168) {
         return "168px";
