@@ -6,13 +6,15 @@
       class="cropped-container flex flex-col justify-between p-4 xl:p-10"
       role="region"
     >
-      <h1 class="hero-title pt-20">
+      <h1 class="text-mobileH1 xl:text-h1 pt-20">
         We’re hands-on and commited to evolving your business to strive for
         better.
       </h1>
       <div class="flex flex-col justify-end">
-        <h2 class="uppercase text-xs xl:text-md xl:w-3/5">Our Offering</h2>
-        <p class="text-sm xl:text-lg xl:w-3/5">
+        <h2 class="uppercase text-mobileKicker xl:text-kicker xl:w-3/5">
+          Our Offering
+        </h2>
+        <p class="text-mobileLargeBody xl:text-largeBody xl:w-3/5">
           We provide physical, pragmatic and personal business guidance. Success
           is never static. Neither are we. We’ll be your business partners for
           positive change.
@@ -21,8 +23,8 @@
     </section>
     <CarouselVue />
     <section class="p-4 xl:p-10" role="region">
-      <h2 class="uppercase text-xs xl:text-md">Stay Updated</h2>
-      <span class="text-xl xl:text-xxl">Newsletter</span>
+      <h2 class="uppercase text-mobileKicker xl:text-kicker">Stay Updated</h2>
+      <span class="text-mobileH1 xl:text-h1">Newsletter</span>
       <form role="form">
         <label class="sr-only" for="full-name">Full Name</label>
         <input
@@ -30,7 +32,7 @@
           type="text"
           name="Full Name"
           placeholder="Full Name"
-          class="text-xl xl:text-xxl bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full"
+          class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full"
         />
         <label class="sr-only" for="company-name">Company Name</label>
         <input
@@ -38,7 +40,7 @@
           type="text"
           name="Company Name"
           placeholder="Company Name"
-          class="text-xl xl:text-xxl bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full"
+          class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full"
         />
         <label class="sr-only" for="email">Email Address</label>
         <input
@@ -46,7 +48,7 @@
           type="email"
           name="Email Address"
           placeholder="Email Address"
-          class="text-xl xl:text-xxl bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full"
+          class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full"
         />
       </form>
     </section>
