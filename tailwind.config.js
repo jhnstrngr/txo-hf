@@ -12,12 +12,18 @@ module.exports = {
       body: ['MessinaSans', 'sans-serif'],
     },
     fontSize: {
-      sm: '16px',
-      md: '45px',
-      lg: '144px',
+      xs: '10px',
+      sm: '17px',
+      md: '20px',
+      lg: '45px',
+      xl: '47px',
+      xxl: '144px',
     },
     colors: {
-      foreground: '#736357',
+      foreground: {
+        300: '#7363574d',
+        900: '#736357',
+      },
       background: '#f9f5ef',
     },
     extend: {},
