@@ -69,20 +69,6 @@ export default Vue.extend({
 </script>
 
 <style>
-.hero-title {
-  font-size: 49px;
-  line-height: 47px;
-  letter-spacing: -0.065em;
-}
-
-@media (min-width: 764px) {
-  .hero-title {
-    font-size: 144px;
-    line-height: 138px;
-    letter-spacing: -0.065em;
-  }
-}
-
 .above-menu-container {
   min-height: calc(100vh - 156px);
 }
@@ -94,12 +80,12 @@ export default Vue.extend({
 }
 
 .cropped-container {
-  height: calc(100vh - 68.53px);
+  min-height: calc(100vh - 68.53px);
 }
 
 @media (min-width: 764px) {
   .cropped-container {
-    height: calc(100vh - 164.46px);
+    min-height: calc(100vh - 164.46px);
   }
 }
 
