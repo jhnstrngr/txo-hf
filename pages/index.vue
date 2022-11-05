@@ -19,11 +19,7 @@
         </p>
       </div>
     </section>
-    <section class="" role="region">
-      <figure calss="p-4 xl:p-10">
-        <img class="w-auto mx-auto" src="carousel-images/c1.jpg" alt />
-      </figure>
-    </section>
+    <CarouselVue />
     <section class="p-4 xl:p-10" role="region">
       <h2 class="uppercase text-xs xl:text-md">Stay Updated</h2>
       <span class="text-xl xl:text-xxl">Newsletter</span>
@@ -61,11 +57,12 @@
 <script lang="js">
 import Vue from 'vue'
 import MenuHeader from '~/components/MenuHeader.vue'
+import CarouselVue from '~/components/CarouselVue.vue'
 import FooterVue from '~/components/FooterVue.vue'
 
 export default Vue.extend({
   name: 'IndexPage',
-  components: { MenuHeader, FooterVue },
+  components: { MenuHeader, FooterVue, CarouselVue },
 })
 </script>
 
