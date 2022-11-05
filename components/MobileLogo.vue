@@ -32,6 +32,7 @@
 	263.5,303.5 330.5,303.5 400.1,200.1 470.1,303.5 539.2,303.5 435.8,155.1 "
       />
     </svg>
+    <span class="sr-only">Link to homepage</span>
   </a>
 </template>
 

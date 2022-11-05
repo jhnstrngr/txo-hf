@@ -20,6 +20,7 @@
         fill="#736357"
       />
     </svg>
+    <span class="sr-only">Link to homepage</span>
   </a>
 </template>
 
