@@ -1,46 +1,87 @@
 <template>
-  <div class="">
+  <main class="" role="main">
     <div class="above-menu-container block"></div>
     <MenuHeader />
-    <div class="h-screen relative">
-      <section class="h-screen flex flex-col justify-around p-4 xl:p-10">
-        <h1 class="hero-title">
-          We’re hands-on and commited to evolving your business to strive for
-          better.
-        </h1>
-        <div class="flex flex-col">
-          <h2 class="uppercase">Our Offering</h2>
-          <p>
-            We provide physical, pragmatic and personal business guidance.
-            Success is never static. Neither are we. We’ll be your business
-            partners for positive change.
-          </p>
-        </div>
-      </section>
-    </div>
-    <section class="h-screen">
-      <figure>
-        <img class="w-auto mx-auto" src="carousel-images/c1.jpg" />
+    <section
+      class="cropped-container flex flex-col justify-between p-4 xl:p-10"
+      role="region"
+    >
+      <h1 class="hero-title pt-20">
+        We’re hands-on and commited to evolving your business to strive for
+        better.
+      </h1>
+      <div class="flex flex-col justify-end">
+        <h2 class="uppercase text-xs xl:text-md xl:w-3/5">Our Offering</h2>
+        <p class="text-sm xl:text-lg xl:w-3/5">
+          We provide physical, pragmatic and personal business guidance. Success
+          is never static. Neither are we. We’ll be your business partners for
+          positive change.
+        </p>
+      </div>
+    </section>
+    <section class="" role="region">
+      <figure calss="p-4 xl:p-10">
+        <img class="w-auto mx-auto" src="carousel-images/c1.jpg" alt />
       </figure>
     </section>
-  </div>
+    <section class="p-4 xl:p-10" role="region">
+      <h2 class="uppercase text-xs xl:text-md">Stay Updated</h2>
+      <span class="text-xl xl:text-xxl">Newsletter</span>
+      <form role="form">
+        <label class="sr-only" for="full-name">Full Name</label>
+        <input
+          id="full-name"
+          type="text"
+          name="Full Name"
+          placeholder="Full Name"
+          class="text-xl xl:text-xxl bg-transparent text-foreground-900 placeholder-foreground-300 w-auto"
+        />
+        <label class="sr-only" for="company-name">Company Name</label>
+        <input
+          id="company-name"
+          type="text"
+          name="Company Name"
+          placeholder="Company Name"
+          class="text-xl xl:text-xxl bg-transparent text-foreground-900 placeholder-foreground-300"
+        />
+        <label class="sr-only" for="email">Email Address</label>
+        <input
+          id="email"
+          type="email"
+          name="Email Address"
+          placeholder="Email Address"
+          class="text-xl xl:text-xxl bg-transparent text-foreground-900 placeholder-foreground-300"
+        />
+      </form>
+    </section>
+    <FooterVue />
+  </main>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import Vue from 'vue'
 import MenuHeader from '~/components/MenuHeader.vue'
+import FooterVue from '~/components/FooterVue.vue'
 
 export default Vue.extend({
   name: 'IndexPage',
-  components: { MenuHeader },
+  components: { MenuHeader, FooterVue },
 })
 </script>
 
 <style>
 .hero-title {
-  font-size: 72px;
-  line-height: 69px;
-  letter-spacing: -0.05em;
+  font-size: 49px;
+  line-height: 47px;
+  letter-spacing: -0.065em;
+}
+
+@media (min-width: 764px) {
+  .hero-title {
+    font-size: 144px;
+    line-height: 138px;
+    letter-spacing: -0.065em;
+  }
 }
 
 .above-menu-container {
@@ -53,6 +94,16 @@ export default Vue.extend({
   }
 }
 
+.cropped-container {
+  height: calc(100vh - 68.53px);
+}
+
+@media (min-width: 764px) {
+  .cropped-container {
+    height: calc(100vh - 164.46px);
+  }
+}
+
 .hamburger-icon {
   width: 30px;
   height: 1px;
@@ -62,5 +113,9 @@ export default Vue.extend({
 
 .hamburger-icon:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 </style>
