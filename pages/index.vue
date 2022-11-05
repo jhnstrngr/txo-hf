@@ -24,7 +24,9 @@
     <CarouselVue />
     <section class="p-4 xl:p-10" role="region">
       <h2 class="uppercase text-mobileKicker xl:text-kicker">Stay Updated</h2>
-      <span class="text-mobileH1 xl:text-h1">Newsletter</span>
+      <span class="text-mobileH1 xl:text-h1 inline-block indent-h1"
+        >Newsletter</span
+      >
       <form role="form">
         <label class="sr-only" for="full-name">Full Name</label>
         <input
@@ -32,7 +34,7 @@
           type="text"
           name="Full Name"
           placeholder="Full Name"
-          class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full"
+          class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full indent-h1"
         />
         <label class="sr-only" for="company-name">Company Name</label>
         <input
@@ -40,7 +42,7 @@
           type="text"
           name="Company Name"
           placeholder="Company Name"
-          class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full"
+          class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full indent-h1"
         />
         <label class="sr-only" for="email">Email Address</label>
         <input
@@ -48,7 +50,7 @@
           type="email"
           name="Email Address"
           placeholder="Email Address"
-          class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full"
+          class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full indent-h1"
         />
       </form>
     </section>

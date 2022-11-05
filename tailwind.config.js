@@ -42,7 +42,11 @@ module.exports = {
       },
       background: '#f9f5ef',
     },
-    extend: {},
+    extend: {
+      textIndent: {
+        h1: '-0.055em',
+      },
+    },
   },
   plugins: [],
 }
