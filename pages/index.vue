@@ -34,7 +34,7 @@
           type="text"
           name="Full Name"
           placeholder="Full Name"
-          class="text-xl xl:text-xxl bg-transparent text-foreground-900 placeholder-foreground-300 w-auto"
+          class="text-xl xl:text-xxl bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full"
         />
         <label class="sr-only" for="company-name">Company Name</label>
         <input
@@ -42,7 +42,7 @@
           type="text"
           name="Company Name"
           placeholder="Company Name"
-          class="text-xl xl:text-xxl bg-transparent text-foreground-900 placeholder-foreground-300"
+          class="text-xl xl:text-xxl bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full"
         />
         <label class="sr-only" for="email">Email Address</label>
         <input
@@ -50,7 +50,7 @@
           type="email"
           name="Email Address"
           placeholder="Email Address"
-          class="text-xl xl:text-xxl bg-transparent text-foreground-900 placeholder-foreground-300"
+          class="text-xl xl:text-xxl bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full"
         />
       </form>
     </section>
@@ -85,12 +85,12 @@ export default Vue.extend({
 }
 
 .above-menu-container {
-  height: calc(100vh - 156px);
+  min-height: calc(100vh - 156px);
 }
 
 @media (min-width: 764px) {
   .above-menu-container {
-    height: calc(100vh - 340px);
+    min-height: calc(100vh - 340px);
   }
 }
 
