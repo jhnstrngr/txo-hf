@@ -22,7 +22,7 @@
             type="text"
             name="Full Name"
             placeholder="Full Name"
-            class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full indent-h1"
+            class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 w-full indent-h1"
           />
           <label class="sr-only" for="company-name">Company Name</label>
           <input
@@ -30,7 +30,7 @@
             type="text"
             name="Company Name"
             placeholder="Company Name"
-            class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full indent-h1"
+            class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 w-full indent-h1"
           />
           <label class="sr-only" for="email">Email Address</label>
           <input
@@ -38,7 +38,7 @@
             type="email"
             name="Email Address"
             placeholder="Email Address"
-            class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 max-w-full indent-h1"
+            class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 w-full indent-h1"
           />
           <input
             class="cursor-pointer text-mobileLargeBody xl:text-largeBody pt-5 xl:pt-[72px]"
