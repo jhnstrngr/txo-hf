@@ -1,5 +1,7 @@
 <template>
-  <div class="nav-spacer p-4 xl:p-10 sticky top-0 bg-background z-10">
+  <div
+    class="nav-spacer p-4 xl:p-10 sticky top-0 bg-background z-10 xl:min-h-[180px]"
+  >
     <nav>
       <div class="flex">
         <div class="flex grow shrink-0">
@@ -8,6 +10,7 @@
         </div>
         <div class="flex grow shrink-0 justify-end xl:hidden">
           <button
+            role="button"
             aria-expanded="false"
             class="transition-opacity duration-1000 flex"
             :class="showMenu ? 'opacity' : 'opacity-0'"
