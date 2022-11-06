@@ -17,3 +17,7 @@ body {
   color: #736357;
   background-color: #f9f5ef;
 }
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
