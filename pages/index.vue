@@ -78,16 +78,6 @@ export default Vue.extend({
   }
 }
 
-.cropped-container {
-  min-height: calc(100vh - 68px);
-}
-
-@media (min-width: 764px) {
-  .cropped-container {
-    min-height: calc(100vh - 180px);
-  }
-}
-
 .hamburger-icon {
   width: 30px;
   height: 1px;

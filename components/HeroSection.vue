@@ -28,3 +28,15 @@ export default {
   mixins: [FadeInOutMixin],
 }
 </script>
+
+<style>
+.cropped-container {
+  min-height: calc(100vh - 68px);
+}
+
+@media (min-width: 764px) {
+  .cropped-container {
+    min-height: calc(100vh - 180px);
+  }
+}
+</style>
