@@ -40,7 +40,7 @@ export default {
   methods: {
     onScroll () {
       const maxWidth = 600;
-      const maxHeight = window.innerHeight - 266;
+      const maxHeight = window.innerHeight - 345;
       const current = window.scrollY;
       const percent = ((current / maxHeight) * 100);
 
