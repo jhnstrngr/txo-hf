@@ -1,7 +1,7 @@
 <template>
   <section class="cropped-container flex flex-col justify-between p-4 xl:p-10">
     <h1
-      class="text-mobileH1 xl:text-h1 pt-20 max-w-[1658px]"
+      class="text-mobileH1 xl:text-h1 mt-20 xl:mt-0 max-w-[1658px]"
       :style="{ opacity: opacity }"
     >
       We’re hands-on and commited to evolving your business to strive for
