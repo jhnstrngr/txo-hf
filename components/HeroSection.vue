@@ -8,7 +8,7 @@
       better.
     </h1>
     <div class="flex flex-col justify-end w-full items-end">
-      <div class="max-w-[862px] xl:mr-[286px]">
+      <div class="xl:max-w-[862px] xl:mr-[286px]">
         <h2 class="uppercase text-mobileKicker xl:text-kicker mb-[18px]">
           Our Offering
         </h2>
