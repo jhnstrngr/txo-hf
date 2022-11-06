@@ -10,17 +10,17 @@
         We’re hands-on and commited to evolving your business to strive for
         better.
       </h1>
-      <div class="flex flex-col justify-end">
-        <h2
-          class="uppercase text-mobileKicker xl:text-kicker xl:w-3/5 mb-[18px]"
-        >
-          Our Offering
-        </h2>
-        <p class="text-mobileLargeBody xl:text-largeBody xl:w-3/5">
-          We provide physical, pragmatic and personal business guidance. Success
-          is never static. Neither are we. We’ll be your business partners for
-          positive change.
-        </p>
+      <div class="flex flex-col justify-end w-full items-end">
+        <div class="max-w-[862px] xl:mr-[286px]">
+          <h2 class="uppercase text-mobileKicker xl:text-kicker mb-[18px]">
+            Our Offering
+          </h2>
+          <p class="text-mobileLargeBody xl:text-largeBody">
+            We provide physical, pragmatic and personal business guidance.
+            Success is never static. Neither are we. We’ll be your business
+            partners for positive change.
+          </p>
+        </div>
       </div>
     </section>
     <CarouselVue />
