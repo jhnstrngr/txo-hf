@@ -14,7 +14,9 @@ export default {
     onScroll() {
       const windowHeight = window.innerHeight - 345
       if (window.scrollY <= windowHeight) {
-        return (this.opacity = window.scrollY / windowHeight)
+        return (
+          (this.opacity = parseFloat(window.scrollY / windowHeight).toFixed(3))
+        )
       } else {
         return 1
       }
