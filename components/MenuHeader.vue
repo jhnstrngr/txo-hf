@@ -1,6 +1,6 @@
 <template>
   <div
-    class="nav-spacer p-4 xl:p-10 sticky top-0 bg-background z-10 xl:min-h-[180px]"
+    class="nav-spacer p-4 xl:p-10 sticky top-0 bg-background z-10 xl:min-h-[162px]"
   >
     <nav>
       <div class="flex">

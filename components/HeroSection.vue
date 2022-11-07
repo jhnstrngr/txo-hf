@@ -36,7 +36,7 @@ export default {
 
 @media (min-width: 764px) {
   .cropped-container {
-    min-height: calc(100vh - 180px);
+    min-height: calc(100vh - 162px);
   }
 }
 </style>
