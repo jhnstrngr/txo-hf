@@ -15,6 +15,7 @@
             fill="#736357"
           ></path>
         </svg>
+        <span class="sr-only">Link to Thirdway site</span>
       </a>
       <ol class="flex w-full xl:w-1/2 justify-between">
         <li>
