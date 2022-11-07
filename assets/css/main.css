@@ -5,7 +5,7 @@
 @font-face {
   font-family: 'MessinaSans';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-display: swap;
   src: url('./fonts/MessinaSansWeb-Regular.woff2') format('woff2'),
     url('./fonts/MessinaSansWeb-Regular.woff') format('woff'),
