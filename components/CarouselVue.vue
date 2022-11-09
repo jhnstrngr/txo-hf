@@ -25,20 +25,29 @@
         class="absolute left-0 top-0 w-full h-full hidden xl:flex"
         data-glide-el="controls"
       >
-        <button class="inline-block w-1/2 h-full" data-glide-dir="<">
+        <button
+          class="inline-block w-1/2 h-full cursor-none prev"
+          data-glide-dir="<"
+        >
           <span class="sr-only">Previous</span>
         </button>
-        <button class="inline-block w-1/2 h-full" data-glide-dir=">">
+        <button
+          class="inline-block w-1/2 h-full cursor-none next"
+          data-glide-dir=">"
+        >
           <span class="sr-only">Next</span>
         </button>
       </div>
     </div>
+    <CarouselCursor />
   </section>
 </template>
 
 <script>
 import Glide from '@glidejs/glide'
+import CarouselCursor from './CarouselCursor.vue'
 export default {
+  components: { CarouselCursor },
   mounted() {
     new Glide('.glide').mount()
   },
