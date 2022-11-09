@@ -34,7 +34,9 @@
           >
         </li>
         <li>
-          <a href="#" class="text-mobileFooterText xl:text-navigation"
+          <a
+            href="#"
+            class="text-mobileFooterText xl:text-navigation xl:mr-[108px]"
             >Accessibility</a
           >
         </li>
