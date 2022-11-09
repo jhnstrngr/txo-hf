@@ -6,23 +6,28 @@
         <ul class="glide__slides">
           <li class="glide__slide">
             <img class="slide-image block" src="carousel-images/c1.jpg" alt />
+            <CarouselAccordion />
           </li>
           <li class="glide__slide">
             <img class="slide-image block" src="carousel-images/c2.jpeg" alt />
+            <CarouselAccordion />
           </li>
           <li class="glide__slide">
             <img class="slide-image block" src="carousel-images/c3.jpeg" alt />
+            <CarouselAccordion />
           </li>
           <li class="glide__slide">
             <img class="slide-image block" src="carousel-images/c4.jpeg" alt />
+            <CarouselAccordion />
           </li>
           <li class="glide__slide">
             <img class="slide-image block" src="carousel-images/c5.jpeg" alt />
+            <CarouselAccordion />
           </li>
         </ul>
       </div>
       <div
-        class="absolute left-0 top-0 w-full h-full hidden xl:flex"
+        class="absolute left-0 top-0 w-full h-full hidden xl:flex z-0"
         data-glide-el="controls"
       >
         <button
@@ -45,12 +50,14 @@
 
 <script>
 import Glide from '@glidejs/glide'
+import CarouselAccordion from './CarouselAccordion.vue'
 import CarouselCursor from './CarouselCursor.vue'
 export default {
-  components: { CarouselCursor },
+  components: { CarouselCursor, CarouselAccordion },
   mounted() {
     new Glide('.glide').mount()
   },
+  methods: {},
 }
 </script>
 
