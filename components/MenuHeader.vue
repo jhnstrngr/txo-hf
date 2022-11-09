@@ -70,3 +70,16 @@ export default {
 
 }
 </script>
+
+<style>
+.hamburger-icon {
+  width: 30px;
+  height: 1px;
+  background-color: #736357;
+  display: block;
+}
+
+.hamburger-icon:not(:last-child) {
+  margin-bottom: 11.4px;
+}
+</style>

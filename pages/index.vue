@@ -69,17 +69,6 @@ export default Vue.extend({
 </script>
 
 <style>
-.hamburger-icon {
-  width: 30px;
-  height: 1px;
-  background-color: #736357;
-  display: block;
-}
-
-.hamburger-icon:not(:last-child) {
-  margin-bottom: 10px;
-}
-
 .bg-transparent {
   background-color: transparent;
 }
