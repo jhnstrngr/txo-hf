@@ -1,6 +1,6 @@
 <template>
   <main class="" role="main">
-    <div class="above-menu-container block"></div>
+    <AboveMenuContainer />
     <MenuHeader />
     <MenuNav />
     <HeroSection />
@@ -60,24 +60,15 @@ import CarouselVue from '~/components/CarouselVue.vue'
 import FooterVue from '~/components/FooterVue.vue'
 import MenuNav from '~/components/MenuNav.vue'
 import HeroSection from '~/components/HeroSection.vue'
+import AboveMenuContainer from '~/components/AboveMenuContainer.vue'
 
 export default Vue.extend({
   name: 'IndexPage',
-  components: { MenuHeader, FooterVue, CarouselVue, MenuNav, HeroSection },
+  components: { MenuHeader, FooterVue, CarouselVue, MenuNav, HeroSection, AboveMenuContainer },
 })
 </script>
 
 <style>
-.above-menu-container {
-  height: calc(100vh - 156px);
-}
-
-@media (min-width: 764px) {
-  .above-menu-container {
-    height: calc(100vh - 345px);
-  }
-}
-
 .hamburger-icon {
   width: 30px;
   height: 1px;
