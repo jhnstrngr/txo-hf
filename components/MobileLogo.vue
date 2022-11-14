@@ -40,7 +40,19 @@
 export default {
   data() {
     return {
-      width: '280px'
+      width: "280px"
+    }
+  },
+  watch: {
+    width(newWidth) {
+      localStorage.setItem("mobileLogoWidth", newWidth)
+    }
+  },
+  mounted() {
+    if (localStorage.mobileLogoWidth) {
+      this.width = localStorage.mobileLogoWidth
+    } else {
+      this.width = "280px"
     }
   },
   beforeMount () {
@@ -63,7 +75,7 @@ export default {
       }
 
       return (this.width = value + "px");
-    }
+    },
   },
 }
 </script>
