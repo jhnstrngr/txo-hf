@@ -14,7 +14,7 @@
             :class="{ opacity: showMenu, 'opacity-0': !showMenu }"
             @click="menuButton()"
           >
-            <span class="">
+            <span :class="{ 'hamburger-open': menuState }">
               <span class="hamburger-icon hamburger-icon__1"></span>
               <span class="hamburger-icon hamburger-icon__2"></span>
               <span class="hamburger-icon hamburger-icon__3"></span>
@@ -116,6 +116,21 @@ export default {
   height: 1px;
   background-color: #736357;
   display: block;
+  transform-origin: 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.hamburger-open .hamburger-icon:first-child {
+  transform: rotate(45deg) translate(10px, 0px);
+}
+
+.hamburger-open .hamburger-icon:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-open .hamburger-icon:last-child {
+  transform: rotate(-45deg) translate(2px, 7px);
 }
 
 .hamburger-icon:not(:last-child) {
