@@ -33,7 +33,7 @@
     </div>
 
     <button
-      class="flex text-mobileLargeBody xl:text-largeBody py-3 xl:py-[30px] text-foreground-300 cursor-pointer"
+      class="flex text-mobileLargeBody xl:text-largeBody py-3 xl:py-[30px] text-foreground-300 cursor-pointer hover:underline focus:underline"
       @click="accordionButton()"
     >
       {{ !open ? 'Read More' : 'Hide Text' }}

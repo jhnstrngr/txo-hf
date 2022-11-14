@@ -41,7 +41,7 @@
             class="text-mobileH1 xl:text-h1 bg-transparent text-foreground-900 placeholder-foreground-300 w-full indent-h1"
           />
           <input
-            class="cursor-pointer text-mobileLargeBody xl:text-largeBody pt-5 xl:pt-[72px]"
+            class="cursor-pointer text-mobileLargeBody xl:text-largeBody pt-5 xl:pt-[72px] hover:underline focus:underline"
             type="submit"
             value="Submit"
             role="button"
