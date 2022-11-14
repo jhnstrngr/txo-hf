@@ -11,7 +11,8 @@
             role="button"
             aria-expanded="false"
             class="transition-opacity duration-1000 flex"
-            :class="showMenu ? 'opacity' : 'opacity-0'"
+            :class="{ opacity: showMenu, 'opacity-0': !showMenu }"
+            @click="menuButton()"
           >
             <span class="">
               <span class="hamburger-icon hamburger-icon__1"></span>
@@ -20,17 +21,51 @@
             </span>
             <span class="sr-only">Toggle mobile menu visibility</span>
           </button>
-          <div class="menu invisible fixed">
-            <div>
-              <div>
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
+          <div
+            class="fixed bg-background top-[68px] left-0 right-0 w-full h-full mx-auto p-4 z-50 text-mobileNavigation pt-14"
+            :class="{
+              block: menuState,
+              hidden: !menuState,
+            }"
+          >
+            <hr />
+            <div class="flex flex-col pt-[17px]">
+              <span class="uppercase mb-2.5 text-mobileSmallText"
+                >Enquiries</span
+              >
+              <div class="flex flex-col min-w-7">
+                <span>General</span>
+                <a href="tel:+4402036134733">+44 (0) 020 3613 4733</a>
+                <a href="mailto:Info@txowork.com">Info@txowork.com</a>
               </div>
             </div>
+            <div class="flex flex-col pb-[17px]">
+              <span class="uppercase mb-2.5"></span>
+              <div class="flex flex-col">
+                <span>Sales</span>
+                <a href="tel:+4402036134733">+44 (0) 020 3613 4733</a>
+                <a href="mailto:Info@txowork.com">Info@txowork.com</a>
+              </div>
+            </div>
+            <hr />
+            <div class="flex flex-col py-[17px]">
+              <span class="uppercase mb-2.5 text-mobileSmallText">Address</span>
+              <div class="flex flex-col">
+                <span>Morelands</span>
+                <span>5-23 Old Street</span>
+                <span>London EC1V 9HL</span>
+              </div>
+            </div>
+            <hr />
+            <div class="flex flex-col py-[17px]">
+              <span class="uppercase mb-2.5 text-mobileSmallText">Connect</span>
+              <div class="flex flex-col">
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+              </div>
+            </div>
+            <hr />
           </div>
         </div>
       </div>
@@ -47,7 +82,8 @@ export default {
   },
   data() {
     return {
-      showMenu: false
+      showMenu: false,
+      menuState: false,
     }
   },
   beforeMount () {
@@ -63,8 +99,11 @@ export default {
         return (this.showMenu = true);
       }
       else {
-        return (this.showMenu = false)
+        return (this.showMenu = false);
       }
+    },
+    menuButton () {
+      this.menuState = !this.menuState;
     }
   },
 
