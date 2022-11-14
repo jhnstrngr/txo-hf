@@ -5,43 +5,137 @@
       <div data-glide-el="track" class="glide__track">
         <ul class="glide__slides">
           <li class="glide__slide">
-            <img class="slide-image block" src="carousel-images/c1.jpg" alt />
+            <div class="relative">
+              <img class="slide-image block" src="carousel-images/c1.jpg" alt />
+              <div
+                class="absolute left-0 top-0 w-full h-full hidden xl:flex z-0"
+                data-glide-el="controls"
+              >
+                <button
+                  class="inline-block w-1/2 h-full cursor-none prev"
+                  data-glide-dir="<"
+                >
+                  <span class="sr-only">Previous</span>
+                </button>
+                <button
+                  class="inline-block w-1/2 h-full cursor-none next"
+                  data-glide-dir=">"
+                >
+                  <span class="sr-only">Next</span>
+                </button>
+              </div>
+            </div>
             <CarouselAccordion />
           </li>
           <li class="glide__slide">
-            <img class="slide-image block" src="carousel-images/c2.jpeg" alt />
+            <div class="relative">
+              <img
+                class="slide-image block"
+                src="carousel-images/c2.jpeg"
+                alt
+              />
+              <div
+                class="absolute left-0 top-0 w-full h-full hidden xl:flex z-0"
+                data-glide-el="controls"
+              >
+                <button
+                  class="inline-block w-1/2 h-full cursor-none prev"
+                  data-glide-dir="<"
+                >
+                  <span class="sr-only">Previous</span>
+                </button>
+                <button
+                  class="inline-block w-1/2 h-full cursor-none next"
+                  data-glide-dir=">"
+                >
+                  <span class="sr-only">Next</span>
+                </button>
+              </div>
+            </div>
             <CarouselAccordion />
           </li>
           <li class="glide__slide">
-            <img class="slide-image block" src="carousel-images/c3.jpeg" alt />
+            <div class="relative">
+              <img
+                class="slide-image block"
+                src="carousel-images/c3.jpeg"
+                alt
+              />
+              <div
+                class="absolute left-0 top-0 w-full h-full hidden xl:flex z-0"
+                data-glide-el="controls"
+              >
+                <button
+                  class="inline-block w-1/2 h-full cursor-none prev"
+                  data-glide-dir="<"
+                >
+                  <span class="sr-only">Previous</span>
+                </button>
+                <button
+                  class="inline-block w-1/2 h-full cursor-none next"
+                  data-glide-dir=">"
+                >
+                  <span class="sr-only">Next</span>
+                </button>
+              </div>
+            </div>
             <CarouselAccordion />
           </li>
           <li class="glide__slide">
-            <img class="slide-image block" src="carousel-images/c4.jpeg" alt />
+            <div class="relative">
+              <img
+                class="slide-image block"
+                src="carousel-images/c4.jpeg"
+                alt
+              />
+              <div
+                class="absolute left-0 top-0 w-full h-full hidden xl:flex z-0"
+                data-glide-el="controls"
+              >
+                <button
+                  class="inline-block w-1/2 h-full cursor-none prev"
+                  data-glide-dir="<"
+                >
+                  <span class="sr-only">Previous</span>
+                </button>
+                <button
+                  class="inline-block w-1/2 h-full cursor-none next"
+                  data-glide-dir=">"
+                >
+                  <span class="sr-only">Next</span>
+                </button>
+              </div>
+            </div>
             <CarouselAccordion />
           </li>
           <li class="glide__slide">
-            <img class="slide-image block" src="carousel-images/c5.jpeg" alt />
+            <div class="relative">
+              <img
+                class="slide-image block"
+                src="carousel-images/c5.jpeg"
+                alt
+              />
+              <div
+                class="absolute left-0 top-0 w-full h-full hidden xl:flex z-0"
+                data-glide-el="controls"
+              >
+                <button
+                  class="inline-block w-1/2 h-full cursor-none prev"
+                  data-glide-dir="<"
+                >
+                  <span class="sr-only">Previous</span>
+                </button>
+                <button
+                  class="inline-block w-1/2 h-full cursor-none next"
+                  data-glide-dir=">"
+                >
+                  <span class="sr-only">Next</span>
+                </button>
+              </div>
+            </div>
             <CarouselAccordion />
           </li>
         </ul>
-      </div>
-      <div
-        class="absolute left-0 top-0 w-full h-full hidden xl:flex z-0"
-        data-glide-el="controls"
-      >
-        <button
-          class="inline-block w-1/2 h-full cursor-none prev"
-          data-glide-dir="<"
-        >
-          <span class="sr-only">Previous</span>
-        </button>
-        <button
-          class="inline-block w-1/2 h-full cursor-none next"
-          data-glide-dir=">"
-        >
-          <span class="sr-only">Next</span>
-        </button>
       </div>
     </div>
     <CarouselCursor />
