@@ -43,18 +43,6 @@ export default {
       width: "280px"
     }
   },
-  watch: {
-    width(newWidth) {
-      localStorage.setItem("mobileLogoWidth", newWidth)
-    }
-  },
-  mounted() {
-    if (localStorage.mobileLogoWidth) {
-      this.width = localStorage.mobileLogoWidth
-    } else {
-      this.width = "280px"
-    }
-  },
   beforeMount () {
     window.addEventListener('scroll', this.onScroll);
  },

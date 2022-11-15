@@ -31,18 +31,6 @@ export default {
       width: '600px'
     }
   },
-  watch: {
-    width(newWidth) {
-      localStorage.setItem("logoWidth", newWidth)
-    }
-  },
-  mounted() {
-    if (localStorage.logoWidth) {
-      this.width = localStorage.logoWidth
-    } else {
-      this.width = '600px'
-    }
-  },
   beforeMount () {
     window.addEventListener('scroll', this.onScroll);
  },
