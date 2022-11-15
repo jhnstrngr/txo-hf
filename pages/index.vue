@@ -65,6 +65,9 @@ import AboveMenuContainer from '~/partials/AboveMenuContainer.vue'
 export default Vue.extend({
   name: 'IndexPage',
   components: { MenuHeader, FooterVue, CarouselVue, MenuNav, HeroSection, AboveMenuContainer },
+  beforeMount() {
+    window.scrollTo(0, 0);
+  }
 })
 </script>
 
