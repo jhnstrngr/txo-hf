@@ -144,8 +144,8 @@
 
 <script>
 import Glide from '@glidejs/glide'
-import CarouselAccordion from './CarouselAccordion.vue'
-import CarouselCursor from './CarouselCursor.vue'
+import CarouselAccordion from '../components/CarouselAccordion.vue'
+import CarouselCursor from '../components/CarouselCursor.vue'
 export default {
   components: { CarouselCursor, CarouselAccordion },
   mounted() {

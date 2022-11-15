@@ -1,5 +1,5 @@
 <template>
-  <main class="" role="main">
+  <main role="main">
     <AboveMenuContainer />
     <MenuHeader />
     <MenuNav />
@@ -55,12 +55,12 @@
 
 <script lang="js">
 import Vue from 'vue'
-import MenuHeader from '~/components/MenuHeader.vue'
-import CarouselVue from '~/components/CarouselVue.vue'
-import FooterVue from '~/components/FooterVue.vue'
-import MenuNav from '~/components/MenuNav.vue'
-import HeroSection from '~/components/HeroSection.vue'
-import AboveMenuContainer from '~/components/AboveMenuContainer.vue'
+import MenuHeader from '~/partials/MenuHeader.vue'
+import CarouselVue from '~/partials/CarouselVue.vue'
+import FooterVue from '~/partials/FooterVue.vue'
+import MenuNav from '~/partials/MenuNav.vue'
+import HeroSection from '~/partials/HeroSection.vue'
+import AboveMenuContainer from '~/partials/AboveMenuContainer.vue'
 
 export default Vue.extend({
   name: 'IndexPage',
